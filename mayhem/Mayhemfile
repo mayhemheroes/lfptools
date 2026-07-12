@@ -1,0 +1,8 @@
+project: lfptools
+target: lfpsplitter
+cmds:
+  - cmd: /mayhem/fuzz_lfpsplitter
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lfpsplitter/testsuite
